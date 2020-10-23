@@ -12,14 +12,17 @@ public static int recursiveFibonacci(int num) {
 	return recursiveFibonacci(num-1)+recursiveFibonacci(num-2);
 }
 public static int nonRecursiveFibonacci(int num) {
-	int num1 = 0, num2 = 1, res=0;
-	for(int itr=0;itr<10;itr++) {
-		res=num1;
-		int sum = num1+num2;
-		num1 = num2;
-		num2 = sum;
+	if(num <= 1){
+	   return num;
 	}
-	return res;
+        int fiboCurr = 1;
+        int fiboPrev = 1;
+	for(int i = 2; i < num; ++i){
+	int temp = fiboCurr;
+	fiboCurr += fiboPrev;
+	fiboPrev = temp;
+	}
+	return fiboCurr;
 }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
