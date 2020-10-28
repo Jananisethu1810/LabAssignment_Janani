@@ -5,8 +5,6 @@
 import java.util.Scanner;
 import java.util.StringTokenizer;
 public class SumOfIntegers {
-
-	
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
 		String input=scan.nextLine();        // Reads the line of integers.
