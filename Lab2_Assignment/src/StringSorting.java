@@ -6,8 +6,7 @@
 import java.util.*;
 public class StringSorting {
 	public static String[] sortStrings(String[] str) {  // Accept an array of String objects and sort in Alphabetical order.
-		
-		int len=str.length;
+	    int len=str.length;
 	    Arrays.sort(str);    //Sorting the array in ascending order
 	    if(len%2==0) {
 	        for(int i=0,j=len/2;i<len/2;i++,j++) {  
