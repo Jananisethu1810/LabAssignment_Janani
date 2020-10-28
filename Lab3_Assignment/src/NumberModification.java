@@ -12,9 +12,9 @@ public class NumberModification {
     	int size=str.length();
     	String result="";
     	for(int index=0;index<size-1;index++) {
-    		char ch1=str.charAt(index), ch2=str.charAt(index+1);
-    		int temp=Math.abs(Integer.parseInt(ch1+"")-Integer.parseInt(ch2+""));
-    		result+=temp;
+    	    char ch1=str.charAt(index), ch2=str.charAt(index+1);
+    	    int temp=Math.abs(Integer.parseInt(ch1+"")-Integer.parseInt(ch2+""));
+    	    result+=temp;
     	}
     	result+=str.charAt(size-1);           // Adding the unit digit into the string.
     	return Integer.parseInt(result);
