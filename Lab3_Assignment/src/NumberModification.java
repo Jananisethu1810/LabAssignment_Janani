@@ -19,12 +19,12 @@ public class NumberModification {
     	result+=str.charAt(size-1);           // Adding the unit digit into the string.
     	return Integer.parseInt(result);
     }
-	public static void main(String[] args) {
-		Scanner scan=new Scanner(System.in);
-		System.out.println("Enter the number to be modifed :");
-		int number=scan.nextInt();
-		int result=modifyNumber(number);
-		System.out.println("The modified number is "+result);
+    public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	System.out.println("Enter the number to be modifed :");
+	int number=scan.nextInt();
+	int result=modifyNumber(number);                 //Function Call
+	System.out.println("The modified number is "+result);
         scan.close();
 	}
 
