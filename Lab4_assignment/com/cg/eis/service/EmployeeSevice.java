@@ -9,7 +9,7 @@ import com.cg.eis.bean.Employee;
 
 public interface EmployeeSevice {
 	/*
-	 * Methods to be implemented in Service class
+	 * Declaring the methods to be implemented by the Service class.
 	 */
 	public void getEmployeeDetails(Employee employee);
 
