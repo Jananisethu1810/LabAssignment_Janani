@@ -33,7 +33,7 @@ public class StringSorting {
         String stringArr[]=new String[size];    //Declaration and initialization of string array
         System.out.println("Enter the string");
         for(int itr=0;itr<size;itr++) {
-        	stringArr[itr]=scan.next().toLowerCase();
+        	stringArr[itr]=scan.next();
         }
         String[] sortedArray=sortStrings(stringArr);
         System.out.println("The sorted string array is");
