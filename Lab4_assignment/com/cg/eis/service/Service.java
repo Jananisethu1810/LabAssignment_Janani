@@ -17,6 +17,9 @@ public class Service implements EmployeeSevice {
 	@Override
 	public void getEmployeeDetails(Employee employee) {
 		Scanner sc = new Scanner(System.in);
+		/**
+		  * Getting the required informations from the user
+		 */
 		System.out.println("Enter your Id");
 		long id = sc.nextLong();
 		System.out.println("Enter your Name");
@@ -25,6 +28,9 @@ public class Service implements EmployeeSevice {
 		double salary = sc.nextDouble();
 		System.out.println("Enter your Designation");
 		String designation = sc.next();
+		/**
+		  * After getting the informations it setted to the variables of employee class by invoking setters.
+		 */
 		employee.setId(id);
 		employee.setName(name);
 		employee.setSalary(salary);
