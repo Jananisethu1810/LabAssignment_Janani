@@ -13,14 +13,14 @@ public class EmployeeMain {
 
 	public static void main(String[] args) {
 		/**
-		 * Creating object for Employee and EmployeeService class
+		 * Creation of object for Employee and Service classes
 		 */
 		Employee empObj = new Employee();
 		Service serviceObj = new Service();
 		Scanner sc = new Scanner(System.in);
 		int flag = 1;
 		/**
-		 * Menu for operations to perform
+		 * Dispaying the menus to perform operations
 		 */
 		while (flag > 0) {
 			System.out.println("1. Give User Information");
@@ -35,11 +35,11 @@ public class EmployeeMain {
 
 			case 1:
 				System.out.println("Your choice is to get details");
-				serviceObj.getEmployeeDetails(empObj);
+				serviceObj.getEmployeeDetails(empObj);                      //Function Call
 				break;
 			case 2:
 				System.out.println("Your choice is to view detais");
-				serviceObj.displayDetails(empObj);
+				serviceObj.displayDetails(empObj);                         //Function Call
 				break;
 			case 3:
 				System.out.println("Thanks for using the Employee Service!!!");
